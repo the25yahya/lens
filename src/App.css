@@ -1,0 +1,12 @@
+/*css reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/*=============*/
+/*title font*/
+.title{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+/*==================*/
