@@ -1,6 +1,7 @@
 import React from 'react'
 import couple from '../Assets/couple.png'
 import { useStateContext } from '../Contexts/ContextProvider'
+import ProductDisplay from '../Components/ProductDisplay'
 
 const Home = () => {
 
@@ -38,8 +39,18 @@ const Home = () => {
             src={couple}
         />
      </section>
-     <section>
-      
+     <section className='relative'>
+      <div className='absolute border top-128 left-10 border-gray-300 text-gray-300 px-5 font-mono text-xl py-1'>
+       compact
+      </div>
+      <div className='absolute w-100 h-1 bg-gray-300 top-135 left-80'></div>
+      <ProductDisplay
+        img1='https://olaproducts.co.nz/cdn/shop/files/164-2201P_B_800x.jpg?v=1690501224'
+        name='OTIS JAZMINE ECO BLACK/GREY POLAR'
+        price='$359.95'
+        description='Jazz up your retro vibe with a feminine take on our #1 fashion favourite. Jazmine takes the best selling Omar and refines it further with a subtle cate eye finish. Made from Eco-Acetate that`s better for the planet, this approachable design is both versatile and full of style.'
+        img2='https://olaproducts.co.nz/cdn/shop/files/164-2201P_A_800x.jpg?v=1690501225'
+      />
      </section>
     </div>
   )
