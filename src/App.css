@@ -6,7 +6,12 @@
 /*=============*/
 /*title font*/
 .title{
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Sevillana', sans-serif;
     font-weight: 600;
 }
 /*==================*/
+/*general css*/
+nav{
+    z-index: 99;
+}
+/*==============================*/

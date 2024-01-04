@@ -14,11 +14,7 @@ export default {
       
       },
       colors: {
-        'custom-color': '#f2f0ea',
-        'custom-color2': '#010101',
-        'custom-color3': '#edcf5d',
-        'custom-color4': '#a4a4a4',
-        'custom-color5':'#383673',
+        'custom-color': '#0F141E',
       },
       width: {
         1000:'1000px',
