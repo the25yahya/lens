@@ -40,17 +40,43 @@ const Home = () => {
         />
      </section>
      <section className='relative'>
-      <div className='absolute border top-128 left-10 border-gray-300 text-gray-300 px-5 font-mono text-xl py-1'>
+      <div className='absolute border top-128 left-10 border-gray-300 text-gray-300 px-5 font-mono text-xl py-1 opacity-65'>
        compact
       </div>
-      <div className='absolute w-100 h-1 bg-gray-300 top-135 left-80'></div>
+      <div className='absolute border top-135 right-12 border-gray-300 text-gray-300 px-5 font-mono text-xl py-1 opacity-65'>
+       classic
+      </div>
+      <div className='absolute w-100 h-0.5 opacity-55 bg-gray-300 top-140 right-44'></div>
+      <div className='absolute w-40 h-0.5 opacity-55 bg-gray-300 top-140 -right-0'></div>
+      <div className='absolute w-100 h-0.5 opacity-55 bg-gray-300 top-135 left-80'></div>
+      <div className='absolute w-100 h-0.5 opacity-55 bg-gray-300 top-135 -left-16'></div>
       <ProductDisplay
-        img1='https://olaproducts.co.nz/cdn/shop/files/164-2201P_B_800x.jpg?v=1690501224'
-        name='OTIS JAZMINE ECO BLACK/GREY POLAR'
-        price='$359.95'
-        description='Jazz up your retro vibe with a feminine take on our #1 fashion favourite. Jazmine takes the best selling Omar and refines it further with a subtle cate eye finish. Made from Eco-Acetate that`s better for the planet, this approachable design is both versatile and full of style.'
-        img2='https://olaproducts.co.nz/cdn/shop/files/164-2201P_A_800x.jpg?v=1690501225'
+        img1='https://us.otiseyewear.com/cdn/shop/products/26-2106P-JT_2_1800x1800.jpg?v=1659971442'
+        name='Omar - Overkill'
+        price='$259.95'
+        description='A crowd-favorite on overdrive. This OTIS Bestseller just got even better with Jamie Thomas’s signature touch. This version of Omar is made with sleek Matte Black frames, grey polarized lenses and other key accents. Temple detailing features Jamies signature matte black cross.'
+        img2='https://us.otiseyewear.com/cdn/shop/products/26-2106P-JT_1_83633802-c18c-4e92-891e-b1610c4a625c_1800x1800.jpg?v=1659971442'
+        img3="https://us.otiseyewear.com/cdn/shop/products/26-2106P-JT_3_1800x1800.jpg?v=1659971442"
+        img4='https://us.otiseyewear.com/cdn/shop/products/26-2106P-JT_4_1800x1800.jpg?v=1659971442'
+        img5='https://us.otiseyewear.com/cdn/shop/products/JT_OTIS_OMAR_04_1800x1800.jpg?v=1659971442'
+        img6='https://us.otiseyewear.com/cdn/shop/products/dsc2609_1800x1800.jpg?v=1659971442'
       />
+     </section>
+     <section className='mt-20'>
+      <div className='flex items-center justify-center relative'>
+        <img className='w-400' src='https://i.pinimg.com/736x/ac/6c/9f/ac6c9fec24303d2a8fc04d3aec1bf0c2.jpg'/>
+        <div className='p-10 text-center'>
+         <h1 className='font-mono text-5xl font-thin mb-10'>The difference is in the lens</h1>
+         <p>through endeless reasearch with physical photo filters and digital manipulation techniques we discoverd our perfect lens. We found a way to use natural sunlight to transform the world around you into a vivid picture; an experience full of clarity and coulour making everyday life look ten times better</p>
+        </div>
+        <img className='w-380' src='https://i.pinimg.com/736x/55/1f/2f/551f2fbd4081135020d26b3d874f0399.jpg' />
+      </div>
+      <div className='mt-100 flex items-center'>
+      <img
+          className='absolute -bottom-100 w-250'
+          src='https://i.pinimg.com/originals/5d/a2/3b/5da23b45565e70f656b50c4d4409e46c.jpg'
+        />
+      </div>
      </section>
     </div>
   )

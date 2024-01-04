@@ -7,6 +7,7 @@ export default {
       spacing: {
         '128': '15rem',
         '135': '16rem',
+        '140':'17rem',
         '100' : '12rem',
         '80' : '10rem',
         '50' : '8rem',
@@ -17,6 +18,7 @@ export default {
       },
       colors: {
         'custom-color': '#0F141E',
+        'custom-color2': '#D9C3B0',
       },
       width: {
         1000:'1000px',
@@ -28,6 +30,7 @@ export default {
         420: '420px',
         410: '410px',
         400: '400px',
+        380:'380px',
         350: '350px',
         320: '320px',
         300: '300px',

@@ -20,13 +20,13 @@ const ProductDisplay = (props) => {
                 <button className='mt-5 px-12 py-3 bg-black text-white cursor-pointer hover:bg-transparent hover:text-black transition'>BUY NOW</button>
             </div>
         </div>
-        <div className='flex flex-wrap items-center justify-center'>
-            <div className='border border-gray-300 cursor-pointer p-2'><img className='w-150' src={props.img2} /></div>
+        <div className='flex flex-wrap items-center justify-center small-imgs mt-10'>
+            <img className='w-150 m-3' src={props.img1} />
+            <img className='w-200 borde-2 border-black' src={props.img2} />
             <img className='w-200 borde-2 border-black' src={props.img3} />
             <img className='w-200 borde-2 border-black' src={props.img4} />
             <img className='w-200 borde-2 border-black' src={props.img5} />
             <img className='w-200 borde-2 border-black' src={props.img6} />
-            <img className='w-200 borde-2 border-black' src={props.img7} />
         </div>
     </div>
   )

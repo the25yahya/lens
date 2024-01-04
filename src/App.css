@@ -17,5 +17,8 @@ nav{
 /*==============================*/
 /*menu trans*/
 /* CSS */
-  
+.small-imgs img{
+    margin: 5px;
+    cursor: pointer;
+}  
 /*======================*/
