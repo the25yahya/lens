@@ -8,7 +8,14 @@ const Home = () => {
   console.log(isMenuOpen);
   return (
     <div className='flex flex-col'>
-     <div className={`absolute bg-custom-color w-full h-full z-10 ${isMenuOpen ? '' : 'hidden'}`}>
+     <div className={`absolute pt-10 flex flex-col items-center text-center bg-custom-color w-full h-full z-10 transition-div ${isMenuOpen ? '' : 'hidden'}`}>
+      <p className='font-mono text-white mt-40 text-xl'>MENU</p>
+      <div className='text-white'>
+        <p className='text-5xl mt-2 font-semibold'>Products</p>
+        <p className='font-semibold text-5xl mt-5'>Brands</p>
+        <p className='text-5xl mt-5 font-semibold'>About</p>
+        <p className='text-5xl mt-5 font-semibold'>Sale</p>
+      </div>
      </div>
      <section className='flex items-center justify-between border-b-2 border-black'>
         <div className='flex flex-col items-center pl-12 ml-12 mt-10 relative'>
