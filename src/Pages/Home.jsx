@@ -38,6 +38,9 @@ const Home = () => {
             src={couple}
         />
      </section>
+     <section>
+      
+     </section>
     </div>
   )
 }
