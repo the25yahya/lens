@@ -4,7 +4,7 @@ import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
 import Dropdown from './Components/Dropdown';
 import { BrowserRouter, BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Home,Products,About,Men,Women } from './Pages/index.jsx';
+import { Home,Products,About,Men,Women,Cart } from './Pages/index.jsx';
 import { ChakraProvider } from '@chakra-ui/react';
 import { useStateContext } from './Contexts/ContextProvider';
 import Loader from './Components/Loader';
@@ -22,6 +22,7 @@ const App = () => {
       <Route path='/About' element = {<About />} />
       <Route path='/Men' element = {<Men />} />
       <Route path='/Women' element = {<Women />} />
+      <Route path='/Cart' element = {<Cart />} />
     </Routes>
     <Footer />
     </div>  }

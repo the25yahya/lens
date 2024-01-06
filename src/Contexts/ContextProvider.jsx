@@ -1,6 +1,6 @@
 import React, {createContext, useContext, useState, useEffect, useReducer} from "react"
 import PropTypes from "prop-types"
-
+import AllProducts from '../Data/AllProducts.json'
 const StateContext = createContext();
 
 
@@ -8,7 +8,7 @@ const StateContext = createContext();
 export const ContextProvider = ({children}) => {
     ///////////////////////////////////////////////
     const [loading, setLoading] = useState(true);
-
+    const [glasses, setGlasses] = useState(AllProducts);
     useEffect(() => {
       // Simulate a delay for loading content
       setTimeout(() => {
@@ -32,7 +32,7 @@ export const ContextProvider = ({children}) => {
     /////////////////////////
     return(
         <StateContext.Provider
-        value={{loading,setLoading,toggleMenu,isMenuOpen,CloseMenu}}
+        value={{loading,setLoading,toggleMenu,isMenuOpen,CloseMenu,glasses,setGlasses}}
         >
          {children}
         </StateContext.Provider>

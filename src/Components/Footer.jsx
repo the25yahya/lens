@@ -2,9 +2,14 @@ import { F } from 'core-js/modules/_export'
 import React from 'react'
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    })}
   return (
     <footer className='bg-pink-100 flex items-center justify-around mt-100 p-20'>
-     <h1 className='title text-3xl cursor-pointer'>Lens</h1>
+     <h1 onClick={scrollToTop} className='title text-3xl cursor-pointer'>Lens</h1>
      <div className='flex flex-col items-start'>
       <p className='mb-3 font-mono font-thin text-lg cursor-pointer'>FAQ</p>
       <p className='mb-3 font-mono font-thin text-lg cursor-pointer'>PRIVACY POLICY</p>

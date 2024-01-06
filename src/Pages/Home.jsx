@@ -9,7 +9,7 @@ const Home = () => {
 
   const { toggleMenu,isMenuOpen,CloseMenu } = useStateContext();
   return (
-    <div className='flex flex-col'>
+    <div className='flex flex-col fade-in'>
      <section className='flex items-center justify-between border-b border-gray-200'>
         <div className='flex flex-col items-center pl-12 ml-12 mt-10 relative w-1/2'>
             <div className='absolute flex rotate-90 -left-8 top-60'>
