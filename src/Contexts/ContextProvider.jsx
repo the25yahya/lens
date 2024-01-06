@@ -6,11 +6,23 @@ const StateContext = createContext();
 
 
 export const ContextProvider = ({children}) => {
+    ///////////////////////////////////////////////
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+      // Simulate a delay for loading content
+      setTimeout(() => {
+        setLoading(false);
+      }, 2500);
+    }, []);
+    /////////////////////////////////
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
       };
-    const [loading, setLoading] = useState(true);
+      const CloseMenu = () => {
+        setIsMenuOpen(false);
+      };
     useEffect(() => {
         // Simulate a delay for loading content
         setTimeout(() => {
@@ -20,7 +32,7 @@ export const ContextProvider = ({children}) => {
     /////////////////////////
     return(
         <StateContext.Provider
-        value={{loading,toggleMenu,isMenuOpen}}
+        value={{loading,setLoading,toggleMenu,isMenuOpen,CloseMenu}}
         >
          {children}
         </StateContext.Provider>

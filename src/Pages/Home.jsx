@@ -2,21 +2,29 @@ import React from 'react'
 import couple from '../Assets/couple.png'
 import { useStateContext } from '../Contexts/ContextProvider'
 import ProductDisplay from '../Components/ProductDisplay'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
 
-  const { toggleMenu,isMenuOpen } = useStateContext();
+  const { toggleMenu,isMenuOpen,CloseMenu } = useStateContext();
   console.log(isMenuOpen);
   return (
     <div className='flex flex-col'>
-     <div className={`absolute pt-10 flex flex-col items-center text-center bg-custom-color w-full h-full z-50 transition-div ${isMenuOpen ? '' : 'hidden'}`}>
+     <div className={`element-to-slide absolute pt-10 flex flex-col items-center text-center bg-custom-color w-full h-full z-50 transition-div ${isMenuOpen ? '' : 'hidden'}`}>
       <p className='font-mono text-white mt-40 text-xl'>MENU</p>
       <div className='text-white'>
-        <p className='text-5xl mt-2 font-semibold'>Products</p>
-        <p className='font-semibold text-5xl mt-5'>Brands</p>
-        <p className='text-5xl mt-5 font-semibold'>About</p>
-        <p className='text-5xl mt-5 font-semibold'>Men eyewear</p>
-        <p className='text-5xl mt-5 font-semibold'>Women eyewear</p>
+        <Link to='/Products'><p
+        onClick={CloseMenu} 
+        className='text-5xl mt-2 font-semibold hover:opacity-50 transition'>Products</p></Link>
+        <Link to='/About'><p
+        onClick={CloseMenu} 
+         className=' hover:opacity-50 transition text-5xl mt-8 font-semibold'>About</p></Link>
+        <Link to='/Men'><p
+        onClick={CloseMenu} 
+        className='text-5xl mt-8 font-semibold hover:opacity-50 transition'>Men eyewear</p></Link>
+        <Link to='/Women'><p 
+        onClick={CloseMenu} 
+        className='text-5xl mt-8 font-semibold hover:opacity-50 transition'>Women eyewear</p></Link>
       </div>
      </div>
      <section className='flex items-center justify-between border-b border-gray-200'>
@@ -84,18 +92,20 @@ const Home = () => {
       </div>
       <div className='flex items-start justify-center mt-140'>
        <div className='relative'>
-        <img
-          className='w-400'
+         <img
+          className='w-400 shadow-lg'
           src='https://img.freepik.com/premium-photo/stylish-man-sunglasses-hat_85574-13912.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1699833600&semt=ais'
-        />
-        <div className='flex- flex-col   ml-10 absolute right-140 mr-32 text-center bottom-36 w-300'>
+         />
+         <div className='flex- flex-col   ml-10 absolute right-140 mr-32 text-center bottom-36 w-300'>
            <p className='mb-3 font-semibold'>wearing under the sunset is the most amazing thing.</p>
           <p><span className='text-cyan-400 font-semibold'>@KellyLing</span> on instagram</p>
          </div>
+         <div className='absolute w-80 h-300 bg-cyan-300 -top-36 left-36 -z-30 shadow-lg'></div>
        </div>
        <div className='relative'>
+       <div className='absolute w-250 h-250 bg-cyan-300 -bottom-30 -left-40 -z-30 shadow-lg'></div>
         <img
-          className='w-250 ml-8'
+          className='w-250 ml-8 shadow-lg'
           src='https://media1.popsugar-assets.com/files/thumbor/ArueK53Zo5lmv6LuMlgvBuuUup0/fit-in/728xorig/filters:format_auto-!!-:strip_icc-!!-/2020/02/07/890/n/1922564/6c3f73985e3dc6d08e4236.78018502_/i/best-sunglasses-for-women.jpg'
         />
          <div className='flex- flex-col   ml-10 absolute left-140 bottom-36 w-300 text-center'>
