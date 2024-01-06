@@ -1,8 +1,12 @@
 import React from 'react'
+import Dropdown from '../Components/Dropdown'
+
 
 const Products = () => {
   return (
-    <div>Products</div>
+    <div className='relative'>
+    <Dropdown />
+    Products</div>
   )
 }
 

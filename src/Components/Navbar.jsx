@@ -14,7 +14,7 @@ const Navbar = () => {
         {isMenuOpen ? <MdOutlineClose /> : <MdOutlineMenu />}
         </div>
         <Link to='/'><h1 onClick={CloseMenu} className={`title text-6xl ${isMenuOpen ? 'text-white' : ''}`}>Lens</h1></Link>
-        <Link to='/cart'><div className='flex flex-col items-center bg-cyan-300 rounded-full p-3 hover:bg-transparent transition cursor-pointer'>
+        <Link to='/cart'><div onClick={CloseMenu}  className='flex flex-col items-center bg-cyan-300 rounded-full p-3 hover:bg-transparent transition cursor-pointer'>
          <FaOpencart />
         </div></Link>
     </nav>
