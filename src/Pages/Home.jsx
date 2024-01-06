@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div className='flex flex-col'>
      <section className='flex items-center justify-between border-b border-gray-200'>
-        <div className='flex flex-col items-center pl-12 ml-12 mt-10 relative'>
+        <div className='flex flex-col items-center pl-12 ml-12 mt-10 relative w-1/2'>
             <div className='absolute flex rotate-90 -left-8 top-60'>
              <div className='font-bold text-5xl text-gray-400 cursor-pointer'>.</div>
              <div className='cursor-pointer font-bold text-5xl text-black ml-1'>.</div>
@@ -27,7 +27,7 @@ const Home = () => {
             <button className='mt-5 px-12 py-3 bg-black text-white cursor-pointer hover:bg-transparent hover:text-black transition'>BUY NOW</button>
         </div>
         <img 
-            className='w-700'
+            className='w-1/2'
             src={couple}
         />
      </section>
