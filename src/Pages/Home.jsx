@@ -3,30 +3,13 @@ import couple from '../Assets/couple.png'
 import { useStateContext } from '../Contexts/ContextProvider'
 import ProductDisplay from '../Components/ProductDisplay'
 import { Link } from 'react-router-dom'
+import Dropdown from '../Components/Dropdown'
 
 const Home = () => {
 
   const { toggleMenu,isMenuOpen,CloseMenu } = useStateContext();
-  console.log(isMenuOpen);
   return (
     <div className='flex flex-col'>
-     <div className={`element-to-slide absolute pt-10 flex flex-col items-center text-center bg-custom-color w-full h-full z-50 transition-div ${isMenuOpen ? '' : 'hidden'}`}>
-      <p className='font-mono text-white mt-40 text-xl'>MENU</p>
-      <div className='text-white'>
-        <Link to='/Products'><p
-        onClick={CloseMenu} 
-        className='text-5xl mt-2 font-semibold hover:opacity-50 transition'>Products</p></Link>
-        <Link to='/About'><p
-        onClick={CloseMenu} 
-         className=' hover:opacity-50 transition text-5xl mt-8 font-semibold'>About</p></Link>
-        <Link to='/Men'><p
-        onClick={CloseMenu} 
-        className='text-5xl mt-8 font-semibold hover:opacity-50 transition'>Men eyewear</p></Link>
-        <Link to='/Women'><p 
-        onClick={CloseMenu} 
-        className='text-5xl mt-8 font-semibold hover:opacity-50 transition'>Women eyewear</p></Link>
-      </div>
-     </div>
      <section className='flex items-center justify-between border-b border-gray-200'>
         <div className='flex flex-col items-center pl-12 ml-12 mt-10 relative'>
             <div className='absolute flex rotate-90 -left-8 top-60'>

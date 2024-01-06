@@ -1,11 +1,10 @@
 import React from 'react'
 import Dropdown from '../Components/Dropdown'
-
+import { useStateContext } from '../Contexts/ContextProvider'
 
 const Products = () => {
   return (
-    <div className='relative'>
-    <Dropdown />
+    <div>
     Products</div>
   )
 }
