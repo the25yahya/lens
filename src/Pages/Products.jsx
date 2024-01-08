@@ -123,6 +123,27 @@ const Products = () => {
         <p className='ml-2'>CLEAR</p>
         </div>
       </div>
+      <div className='flex flex-col items-start w-200 border-b border-gray-300 pb-4 mt-5'>
+        <h1 className='text-lg font-semibold mb-2'>FRAME SHAPE</h1>
+        <div className='flex items-center'>
+        <input
+          type="checkbox"
+        />
+        <p className='ml-2'>AVIATOR</p>
+        </div>
+        <div className='flex items-center'>
+        <input
+          type="checkbox"
+        />
+        <p className='ml-2'>BROWLINE</p>
+        </div>
+        <div className='flex items-center'>
+        <input
+          type="checkbox"
+        />
+        <p className='ml-2'>GEOMETRIC</p>
+        </div>
+      </div>
      </div>
      <div className='flex flex-wrap'>
       {Products}
