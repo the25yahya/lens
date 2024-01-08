@@ -4,7 +4,7 @@ import { FaRegHeart } from "react-icons/fa";
 
 const Product = (props) => {
   return (
-    <div className='border border-gray-300 shadow-lg w-320 flex flex-col items-center p-1 h-fit px-3 fade-in'>
+    <div className='border border-gray-300 shadow-lg w-320 flex flex-col items-center p-1 h-fit px-3 fade-in m-3'>
 
         <img 
             className='w-200 border border-black'
