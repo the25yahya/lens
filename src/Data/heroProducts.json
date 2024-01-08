@@ -1,0 +1,54 @@
+[
+    {
+        "name":"Omar - Overkill",
+        "price":"$259.95",
+        "description":"A crowd-favorite on overdrive. This OTIS Bestseller just got even better with Jamie Thomas’s signature touch. This version of Omar is made with sleek Matte Black frames, grey polarized lenses and other key accents. Temple detailing features Jamies signature matte black cross.",
+        "img1":"https://us.otiseyewear.com/cdn/shop/products/26-2106P-JT_2_1800x1800.jpg?v=1659971442",
+        "img2":"https://us.otiseyewear.com/cdn/shop/products/26-2106P-JT_1_83633802-c18c-4e92-891e-b1610c4a625c_1800x1800.jpg?v=1659971442",
+        "img3":"https://us.otiseyewear.com/cdn/shop/products/26-2106P-JT_3_1800x1800.jpg?v=1659971442",
+        "img4":"https://us.otiseyewear.com/cdn/shop/products/26-2106P-JT_4_1800x1800.jpg?v=1659971442",
+        "img5":"https://us.otiseyewear.com/cdn/shop/products/JT_OTIS_OMAR_04_1800x1800.jpg?v=1659971442",
+        "img6":"https://us.otiseyewear.com/cdn/shop/products/dsc2609_1800x1800.jpg?v=1659971442",
+        "colors":"1 vailable color",
+        "tag":"New Arrival"
+    },
+    {
+        "name":"DIVIDE X - Eco Aurora",
+        "price":"$329.95",
+        "description":"Enjoy big style in a streamlined frame. Divide X supersizes classic aesthetics with current techniques to create a stylish look that’s ultra comfortable to wear. Made in biodegradable Eco-Acetate, it’s ideal for those who want a timeless design with a little extra head room.",
+        "img1":"https://au.otiseyewear.com/cdn/shop/files/190-2303P_B_1800x1800.jpg?v=1689644394",
+        "img2":"https://au.otiseyewear.com/cdn/shop/products/190-2303P_A_1800x1800.jpg?v=1689573587",
+        "img3":"https://au.otiseyewear.com/cdn/shop/files/190-2303P_C_1800x1800.jpg?v=1689644394",
+        "img4":"https://au.otiseyewear.com/cdn/shop/files/DIVIDEXPI_1800x1800.png?v=1689644846",
+        "img5":"https://au.otiseyewear.com/cdn/shop/files/DIVIDEXPI2_1800x1800.png?v=1689644846",
+        "img6":"https://au.otiseyewear.com/cdn/shop/files/DIVIDEXPI3_1800x1800.png?v=1689644846",
+        "colors":"1 vailable color",
+        "tag":"New Arrival"
+    },
+    {
+        "name":"DIVIDE X - Outerknown",
+        "price":"$339.95",
+        "description":"Enjoy big style in a streamlined frame. Divide X supersizes classic aesthetics with current techniques to create a stylish look that’s ultra comfortable to wear. Made in biodegradable Eco-Acetate, it’s ideal for those who want a timeless design with a little extra head room.",
+        "img1":"https://au.otiseyewear.com/cdn/shop/files/190-2305P-OK_B_1800x1800.jpg?v=1693813369",
+        "img2":"https://au.otiseyewear.com/cdn/shop/files/190-2305P-OK_A_1800x1800.jpg?v=1693813369",
+        "img3":"https://au.otiseyewear.com/cdn/shop/files/190-2305P-OK_C_1800x1800.jpg?v=1693813370",
+        "img4":"https://au.otiseyewear.com/cdn/shop/files/DIVIDEX_190-2303P_A_1800x1800.jpg?v=1693813425",
+        "img5":"https://au.otiseyewear.com/cdn/shop/files/190-2305P-OK_D_1800x1800.jpg?v=1693813370",
+        "img6":"https://au.otiseyewear.com/cdn/shop/files/190-2305P-OK_F_1800x1800.jpg?v=1693813369",
+        "colors":"1 vailable color",
+        "tag":"New Arrival"
+    },
+    {
+        "name":"UNTITLED - Eco Crystal Birch",
+        "price":"$229.95",
+        "description":"A Kenny favourite, Untitled was an obvious choice for the collaboration. Drawing inspiration from the 90s, its edgy silhouette is streamlined for a sharp aesthetic. The selected Eco Crystal Birch colour, chosen by Kenny, harmonizes with the hues present in his artwork. Crafted from biodegradable Eco-Acetate, Untitled features Kenny's unique art etching on the temples, turning it into wearable art.",
+        "img1":"https://au.otiseyewear.com/cdn/shop/files/195-2303-K_B_cf87c2dc-6fb5-43b1-9341-a56dffe4c3ec_1800x1800.jpg?v=1701220541",
+        "img2":"https://au.otiseyewear.com/cdn/shop/files/195-2303-K_A_9baaa226-3a6f-4789-b673-0ef9437d41b1_1800x1800.jpg?v=1701220540",
+        "img3":"https://au.otiseyewear.com/cdn/shop/files/195-2303-K_C_21eac0d9-0bf4-4c74-b46f-294a8a29b8f9_1800x1800.jpg?v=1701220542",
+        "img4":"https://au.otiseyewear.com/cdn/shop/files/195-2303-K_D_60df6359-a009-491c-b994-ecff179ec560_1800x1800.jpg?v=1701220542",
+        "img5":"https://au.otiseyewear.com/cdn/shop/files/195-2303-K_F_e3795731-5bd1-4bbc-9efe-a6289176bde6_1800x1800.jpg?v=1701220541",
+        "img6":"https://au.otiseyewear.com/cdn/shop/files/195-2303-K_G_8f383483-6f98-4251-b827-bab4444b5503_1800x1800.jpg?v=1701220541",
+        "colors":"1 vailable color",
+        "tag":"New Arrival"
+    }
+]

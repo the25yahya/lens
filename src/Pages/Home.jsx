@@ -7,7 +7,7 @@ import Dropdown from '../Components/Dropdown'
 
 const Home = () => {
 
-  const { toggleMenu,isMenuOpen,CloseMenu } = useStateContext();
+  const { toggleMenu,isMenuOpen,CloseMenu,hero,setHero } = useStateContext();
   return (
     <div className='flex flex-col fade-in'>
      <section className='flex items-center justify-between border-b border-gray-200'>
