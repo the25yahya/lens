@@ -1,5 +1,5 @@
-import { F } from 'core-js/modules/_export'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -11,7 +11,7 @@ const Footer = () => {
     <footer className='bg-pink-100 flex items-center justify-around mt-100 p-20'>
      <h1 onClick={scrollToTop} className='title text-3xl cursor-pointer'>Lens</h1>
      <div className='flex flex-col items-start'>
-      <p className='mb-3 font-mono font-thin text-lg cursor-pointer'>FAQ</p>
+      <Link onClick={scrollToTop} to='/Faq'><p className='mb-3 font-mono font-thin text-lg cursor-pointer'>FAQ</p></Link>
       <p className='mb-3 font-mono font-thin text-lg cursor-pointer'>PRIVACY POLICY</p>
       <p className='mb-3 font-mono font-thin text-lg cursor-pointer'>TERMS & CONDITIONS</p>
       <p className='mb-3 font-mono font-thin text-lg cursor-pointer'>DELIVERY</p>
