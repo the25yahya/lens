@@ -3,6 +3,8 @@ import PropTypes from "prop-types"
 import AllProducts from '../Data/AllProducts.json'
 const StateContext = createContext();
 import HeroProducts from '../Data/heroProducts.json'
+import MenProducts from '../Data/MenProducts.json'
+import WomenProducts from '../Data/WomenProducts.json'
 
 
 export const ContextProvider = ({children}) => {
@@ -27,6 +29,8 @@ export const ContextProvider = ({children}) => {
       setHero(HeroProducts[3]);
     }
     const [glasses, setGlasses] = useState(AllProducts);
+    const [menGlasses, setMenGlasses] = useState(MenProducts);
+    const [womenGlasses, setWomenGlasses] = useState(WomenProducts);
     useEffect(() => {
       // Simulate a delay for loading content
       setTimeout(() => {
@@ -50,7 +54,7 @@ export const ContextProvider = ({children}) => {
     /////////////////////////
     return(
         <StateContext.Provider
-        value={{loading,setLoading,toggleMenu,isMenuOpen,CloseMenu,glasses,setGlasses,hero,setHero,changeHero0,changeHero1,changeHero2,changeHero3,dot,setDot}}
+        value={{loading,setLoading,toggleMenu,isMenuOpen,CloseMenu,glasses,setGlasses,hero,setHero,changeHero0,changeHero1,changeHero2,changeHero3,dot,setDot,menGlasses,womenGlasses}}
         >
          {children}
         </StateContext.Provider>
