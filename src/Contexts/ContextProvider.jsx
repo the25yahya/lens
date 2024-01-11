@@ -52,6 +52,20 @@ export const ContextProvider = ({children}) => {
         }, 2500);
       }, []);
     /////////////////////////
+    //cart reducer js //////////////////
+    const cartReducer = ( state, action ) =>{
+      switch(action.type){
+        case 'ADD_TO_CART' :{
+          
+        }
+      }
+    }
+
+    const cartInitialState = {
+      cart:[],
+      subtotal:0,
+    }
+    const [state, dispatch] = useReducer(cartReducer,cartInitialState)
     return(
         <StateContext.Provider
         value={{loading,setLoading,toggleMenu,isMenuOpen,CloseMenu,glasses,setGlasses,hero,setHero,changeHero0,changeHero1,changeHero2,changeHero3,dot,setDot,menGlasses,womenGlasses}}
