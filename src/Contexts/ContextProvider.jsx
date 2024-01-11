@@ -56,8 +56,12 @@ export const ContextProvider = ({children}) => {
     const cartReducer = ( state, action ) =>{
       switch(action.type){
         case 'ADD_TO_CART' :{
-          
-        }
+          const updatedCart = [...state.cart,action.payload];
+          const updatedSubtotal = updatedCart.reduce((sum,item) =>sum + item.price, 0);
+           return{
+            ...state, cart: updatedCart,
+            subtotal : updatedSubtotal,
+           };}
       }
     }
 
@@ -68,7 +72,7 @@ export const ContextProvider = ({children}) => {
     const [state, dispatch] = useReducer(cartReducer,cartInitialState)
     return(
         <StateContext.Provider
-        value={{loading,setLoading,toggleMenu,isMenuOpen,CloseMenu,glasses,setGlasses,hero,setHero,changeHero0,changeHero1,changeHero2,changeHero3,dot,setDot,menGlasses,womenGlasses}}
+        value={{loading,setLoading,toggleMenu,isMenuOpen,CloseMenu,glasses,setGlasses,hero,setHero,changeHero0,changeHero1,changeHero2,changeHero3,dot,setDot,menGlasses,womenGlasses,cartReducer,state,dispatch}}
         >
          {children}
         </StateContext.Provider>

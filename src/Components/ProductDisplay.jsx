@@ -1,6 +1,14 @@
 import React, {useState} from 'react'
+import { useStateContext } from '../Contexts/ContextProvider';
 
 const ProductDisplay = (props) => {
+
+  const {state,dispatch} = useStateContext();
+  /////////////////////
+  const addToCart = () =>{
+    dispatch({ type : 'ADD_TO_CART', payload:props})
+    console.log(state.cart);
+  };
     const [quantity, setQuantity] = useState(1);
   // Function to handle increasing the quantity
   const increaseQuantity = () => {
@@ -33,7 +41,7 @@ const ProductDisplay = (props) => {
                     <button  onClick={increaseQuantity}  className='p-2 px-4 bg-gray-200'>+</button>
                 </div>
                 <p className='w-500 font-mono my-5 font-semibold'>{props.description}</p>
-                <button className='mt-5 px-12 py-3 bg-black text-white cursor-pointer hover:bg-transparent hover:text-black transition'>BUY NOW</button>
+                <button onClick={addToCart} className='mt-5 px-12 py-3 bg-black text-white cursor-pointer hover:bg-transparent hover:text-black transition'>BUY NOW</button>
             </div>
         </div>
         <div className='flex flex-wrap items-center justify-center small-imgs mt-10'>
