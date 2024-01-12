@@ -12,13 +12,12 @@ const CartItems = () => {
             key={item.name}
             name={item.name}
             price={item.price}
-            color={item.color}
             type={item.type}
           />
         )
       })
   return (
-    <div>
+    <div className='w-full px-10 pt-5 border-t'>
         <div>{CartProducts}</div>
         <div>
             <input placeholder='Discount code or gift card' />

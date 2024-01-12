@@ -26,7 +26,7 @@ const Cart = () => {
   }
   else {
     return (
-      <div className='flex'>
+      <div className='flex pt-80 justify-center '>
        <CartCheckout />
        <CartItems />
       </div>
