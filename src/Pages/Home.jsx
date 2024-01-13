@@ -2,9 +2,9 @@ import React from 'react'
 import couple from '../Assets/couple.png'
 import { useStateContext } from '../Contexts/ContextProvider'
 import ProductDisplay from '../Components/ProductDisplay'
-import { Link } from 'react-router-dom'
-import Dropdown from '../Components/Dropdown'
 import Hero from '../Components/Hero'
+import display from '../Data/display.json'
+
 
 const Home = () => {
 
@@ -28,17 +28,17 @@ const Home = () => {
       <div className='absolute w-100 h-0.5 opacity-55 bg-gray-300 top-135 left-80'></div>
       <div className='absolute w-100 h-0.5 opacity-55 bg-gray-300 top-135 -left-16'></div>
       <ProductDisplay
-        img1='https://us.otiseyewear.com/cdn/shop/products/26-2106P-JT_2_1800x1800.jpg?v=1659971442'
-        name='Omar - Overkill'
-        price='$259.95'
-        description='A crowd-favorite on overdrive. This OTIS Bestseller just got even better with Jamie Thomas’s signature touch. This version of Omar is made with sleek Matte Black frames, grey polarized lenses and other key accents. Temple detailing features Jamies signature matte black cross.'
-        img2='https://us.otiseyewear.com/cdn/shop/products/26-2106P-JT_1_83633802-c18c-4e92-891e-b1610c4a625c_1800x1800.jpg?v=1659971442'
-        img3="https://us.otiseyewear.com/cdn/shop/products/26-2106P-JT_3_1800x1800.jpg?v=1659971442"
-        img4='https://us.otiseyewear.com/cdn/shop/products/26-2106P-JT_4_1800x1800.jpg?v=1659971442'
-        img5='https://us.otiseyewear.com/cdn/shop/products/JT_OTIS_OMAR_04_1800x1800.jpg?v=1659971442'
-        img6='https://us.otiseyewear.com/cdn/shop/products/dsc2609_1800x1800.jpg?v=1659971442'
-        type='oval'
-        color='black'
+        img1={display[0].img1}
+        name={display[0].name}
+        price={display[0].price}
+        description={display[0].description}
+        img2={display[0].img2}
+        img3={display[0].img3}
+        img4={display[0].img4}
+        img5={display[0].img5}
+        img6={display[0].img6}
+        type={display[0].type}
+        color={display[0].color}
       />
      </section>
      <section className='mt-20'>

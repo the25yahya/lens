@@ -17,7 +17,7 @@ const Product = (props) => {
         <div className='w-full'>
             <p className='font-mono font-bold text-lg my-1'>{props.name}</p>
             <div className='w-full flex items-center justify-between my-1'>
-              <p className='font-bold'>{props.price}</p>
+              <p className='font-bold'>${props.price}</p>
               <div className='bg-purple-200 px-1'><p>{props.colors}</p></div>
             </div>
             <button className='w-full text-orange-500 border py-1 mt-4  border-orange-500 font-semibold hover:bg-orange-500 hover:border-transparent hover:text-white transition mb-1'>More Details</button>

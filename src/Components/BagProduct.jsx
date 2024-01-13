@@ -14,7 +14,7 @@ const BagProduct = (props) => {
                 <h1 className=' font-semibold'>{props.name}</h1>
                 <p className='text-sm'><span>{props.color} </span> / <span>{props.type}</span></p>
             </div>
-            <p className='font-bold'>{props.price}</p>
+            <p className='font-bold'>${props.price}</p>
         </div>
   )
 }

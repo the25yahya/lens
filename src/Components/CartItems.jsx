@@ -28,11 +28,11 @@ const CartItems = () => {
         <div className='mt-8'>
             <div className='flex items-center w-380 justify-between my-1'>
                 <h3>Subtotal</h3>
-                <p className='font-bold'>$329.95</p>
+                <p className='font-bold'>${state.subtotal}</p>
             </div>
             <div className='flex items-center w-380 justify-between my-1'>
                 <h3>Shipping</h3>
-                <p>Enter shipping adress</p>
+                <input className='bg-zinc-100 placeholder:text-black text-sm' placeholder='Enter shipping adress' />
             </div>
             <div className='flex items-center w-380 justify-between my-1'>
                <h3 className='font-bold'>Total</h3>
