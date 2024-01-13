@@ -37,6 +37,8 @@ const Home = () => {
         img4='https://us.otiseyewear.com/cdn/shop/products/26-2106P-JT_4_1800x1800.jpg?v=1659971442'
         img5='https://us.otiseyewear.com/cdn/shop/products/JT_OTIS_OMAR_04_1800x1800.jpg?v=1659971442'
         img6='https://us.otiseyewear.com/cdn/shop/products/dsc2609_1800x1800.jpg?v=1659971442'
+        type='oval'
+        color='black'
       />
      </section>
      <section className='mt-20'>

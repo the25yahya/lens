@@ -4,6 +4,7 @@ import { useStateContext } from '../Contexts/ContextProvider'
 
 const CartItems = () => {
     const {state} = useStateContext();
+    console.log(state.cart);
     const AddedProducts = state.cart
     const CartProducts = AddedProducts.map((item) =>{
         return(
@@ -12,29 +13,30 @@ const CartItems = () => {
             key={item.name}
             name={item.name}
             price={item.price}
+            color={item.color}
             type={item.type}
           />
         )
       })
   return (
-    <div className='w-full px-10 pt-5 border-t'>
+    <div className='w-full px-10 pt-5 border-t bg-zinc-100'>
         <div>{CartProducts}</div>
         <div>
-            <input placeholder='Discount code or gift card' />
-            <button>Apply</button>
+            <input className='border p-2 w-300 placeholder:text-sm pl-3 rounded mr-4 border-gray-300' placeholder='Discount code or gift card' />
+            <button className='bg-zinc-200 p-2.5 rounded text-sm border-gray-400 border hover:bg-transparent hover:border-transparent transition'>Apply</button>
         </div>
-        <div>
-            <div>
+        <div className='mt-8'>
+            <div className='flex items-center w-380 justify-between my-1'>
                 <h3>Subtotal</h3>
-                <p>$329.95</p>
+                <p className='font-bold'>$329.95</p>
             </div>
-            <div>
+            <div className='flex items-center w-380 justify-between my-1'>
                 <h3>Shipping</h3>
                 <p>Enter shipping adress</p>
             </div>
-            <div>
-               <h3>Total</h3>
-               <p>$329.95</p>
+            <div className='flex items-center w-380 justify-between my-1'>
+               <h3 className='font-bold'>Total</h3>
+               <p className='font-bold'>$329.95</p>
             </div>
         </div>
     </div>
