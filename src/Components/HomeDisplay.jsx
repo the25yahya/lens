@@ -1,9 +1,8 @@
-import React, {useState} from 'react'
+import  {useState} from 'react'
 import { useStateContext } from '../Contexts/ContextProvider';
 
-const ProductDisplay = (props) => {
-  const {state,dispatch,scrollToTop,displayedProduct,Back} = useStateContext();
-
+const HomeDisplay = (props) => {
+  const {dispatch,scrollToTop} = useStateContext();
 
   /////////////////////
   const addToCart = () =>{
@@ -28,7 +27,6 @@ const ProductDisplay = (props) => {
     };
   return (
     <div className='mt-20 fade-in'>
-        <p><span onClick={Back} className='font-semibold text-gray-500 text-xl animate-pulse cursor-pointer'>Products </span>/<span className='font-mono'> {displayedProduct.name}</span></p>
         <div className='flex items-center justify-center'>
             <img
                 className='z-10 w-350 mr-12'
@@ -62,4 +60,4 @@ const ProductDisplay = (props) => {
   )
 }
 
-export default ProductDisplay
+export default HomeDisplay

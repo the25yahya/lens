@@ -1,10 +1,7 @@
-import React from 'react'
-import couple from '../Assets/couple.png'
 import { useStateContext } from '../Contexts/ContextProvider'
-import ProductDisplay from '../Components/ProductDisplay'
+import HomeDisplay from '../Components/HomeDisplay'
 import Hero from '../Components/Hero'
 import display from '../Data/display.json'
-import Women from '../Assets/women.jpg'
 import { Link } from 'react-router-dom'
 
 const Home = () => {
@@ -32,7 +29,7 @@ const Home = () => {
       <div className='absolute w-40 h-0.5 opacity-55 bg-gray-300 top-140 -right-0'></div>
       <div className='absolute w-100 h-0.5 opacity-55 bg-gray-300 top-135 left-80'></div>
       <div className='absolute w-100 h-0.5 opacity-55 bg-gray-300 top-135 -left-16'></div>
-      <ProductDisplay
+      <HomeDisplay
         img1={display[0].img1}
         name={display[0].name}
         price={display[0].price}

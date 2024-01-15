@@ -73,15 +73,20 @@ export const ContextProvider = ({children}) => {
     const [productDisplay, setProductDisplay] = useState(false);
     const [productDisplayMen, setProductDisplayMen] = useState(false);
     const [productDisplayWomen, setProductDisplayWomen] = useState(false);
-    const [displayedProduct, setDisplayedProduct] = useState(null);
+    const [displayedProduct, setDisplayedProduct] = useState('');
     const scrollToTop = () => {
       window.scrollTo({
         top: 0,
         behavior: 'smooth',
       })}
+      const Back = () =>{
+        setProductDisplay(false);
+        setProductDisplayMen(false);
+        setProductDisplayWomen(false);
+      }
     return(
         <StateContext.Provider
-        value={{loading,setLoading,toggleMenu,isMenuOpen,CloseMenu,glasses,setGlasses,hero,setHero,changeHero0,changeHero1,changeHero2,changeHero3,dot,setDot,menGlasses,womenGlasses,cartReducer,state,dispatch,productDisplay,setProductDisplay,productDisplayMen,productDisplayWomen,setProductDisplayMen,setProductDisplayWomen,displayedProduct,setDisplayedProduct,scrollToTop}}
+        value={{Back,loading,setLoading,toggleMenu,isMenuOpen,CloseMenu,glasses,setGlasses,hero,setHero,changeHero0,changeHero1,changeHero2,changeHero3,dot,setDot,menGlasses,womenGlasses,cartReducer,state,dispatch,productDisplay,setProductDisplay,productDisplayMen,productDisplayWomen,setProductDisplayMen,setProductDisplayWomen,displayedProduct,setDisplayedProduct,scrollToTop}}
         >
          {children}
         </StateContext.Provider>
