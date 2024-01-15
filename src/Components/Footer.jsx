@@ -1,12 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useStateContext } from '../Contexts/ContextProvider'
 
 const Footer = () => {
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    })}
+  
+  const {scrollToTop} = useStateContext();
   return (
     <footer className='bg-pink-100 flex items-center justify-around mt-100 p-20'>
      <h1 onClick={scrollToTop} className='title text-3xl cursor-pointer'>Lens</h1>

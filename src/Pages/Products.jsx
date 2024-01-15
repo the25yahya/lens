@@ -7,12 +7,12 @@ import Filter from '../Components/Filter'
 import ProductDisplay from '../Components/ProductDisplay'
 
 const Products = () => {
-  const {glasses,productDisplay,setProductDisplay,displayedProduct,setDisplayedProduct} = useStateContext();
-  console.log(displayedProduct);
+  const {glasses,productDisplay,setProductDisplay,displayedProduct,setDisplayedProduct,scrollToTop} = useStateContext();
   const Products = glasses.map((item) =>{
     const handleDisplayedProduct = () => {
       setDisplayedProduct(item);
       setProductDisplay(true);
+      scrollToTop();
     } 
     return(
       <Product
@@ -45,6 +45,7 @@ const Products = () => {
   } else {
     return(
       <div className='relative flex justify-start pt-50 px-12'>
+       
        <ProductDisplay 
         key={displayedProduct.name}
         name={displayedProduct.name}

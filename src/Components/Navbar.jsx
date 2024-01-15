@@ -6,7 +6,7 @@ import { useStateContext } from '../Contexts/ContextProvider';
 
 const Navbar = () => {
 
-  const { toggleMenu,isMenuOpen,CloseMenu,state } = useStateContext();
+  const { toggleMenu,isMenuOpen,CloseMenu,state,setProductDisplay } = useStateContext();
 
   return (
     <nav className='flex items-center justify-between p-12 absolute w-full'>

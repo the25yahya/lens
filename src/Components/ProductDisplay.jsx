@@ -2,18 +2,19 @@ import React, {useState} from 'react'
 import { useStateContext } from '../Contexts/ContextProvider';
 
 const ProductDisplay = (props) => {
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    })}
-  const {state,dispatch} = useStateContext();
+  const {state,dispatch,scrollToTop,displayedProduct,setProductDisplay,setProductDisplayMen,setProductDisplayWomen} = useStateContext();
+
+  const Home = () =>{
+    setProductDisplay(false);
+    setProductDisplayMen(false);
+    setProductDisplayWomen(false);
+  }
   /////////////////////
   const addToCart = () =>{
     dispatch({ type : 'ADD_TO_CART', payload:props})
     scrollToTop();
   };
-    const [quantity, setQuantity,productDisplay,setProductDisplay,displayedProduct] = useState(1);
+    const [quantity, setQuantity] = useState(1);
   // Function to handle increasing the quantity
   const increaseQuantity = () => {
     setQuantity(quantity + 1);
@@ -30,7 +31,8 @@ const ProductDisplay = (props) => {
       setSelectedImage(image);
     };
   return (
-    <div className='mt-20'>
+    <div className='mt-20 fade-in'>
+        <p><span onClick={Home} className='font-semibold text-gray-500 text-xl animate-pulse cursor-pointer'>Products </span>/<span className='font-mono'> {displayedProduct.name}</span></p>
         <div className='flex items-center justify-center'>
             <img
                 className='z-10 w-350 mr-12'
@@ -42,7 +44,7 @@ const ProductDisplay = (props) => {
                   <span>{props.type} -</span>
                   <span> {props.color}</span>
                 </p>
-                <p className='font-semibold text-xl'>{props.price}</p>
+                <p className='font-semibold text-xl'>${props.price}</p>
                 <div className='flex my-5'>
                     <button onClick={decreaseQuantity} className='p-2 px-4 bg-gray-200'>-</button>
                     <p className='p-2 px-8 border border-gray-200'>{quantity}</p>
