@@ -4,10 +4,15 @@ import { useStateContext } from '../Contexts/ContextProvider'
 import ProductDisplay from '../Components/ProductDisplay'
 import Hero from '../Components/Hero'
 import display from '../Data/display.json'
-
+import Women from '../Assets/women.jpg'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
-
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    })}
   const {hero} = useStateContext();
   return (
     <div className='flex flex-col fade-in'>
@@ -83,6 +88,26 @@ const Home = () => {
           <p><span className='text-cyan-400 font-semibold'>@KellyLing</span> on instagram</p>
          </div>
        </div>
+      </div>
+     </section>
+     <section className='flex items-center mt-50 justify-center '>
+      <div className='relative'>
+      <p className='absolute z-10 left-5 top-3 text-xl text-white font-semibold'>Women`s sunglasses</p>
+      <Link to='/women'><button
+      onClick={scrollToTop} className='absolute bottom-5 left-0 bg-gray-100 z-10 px-10 py-0.5 shadow-lg hover:bg-transparent transition hover:shadow-transparent hover:text-white'>Explore women`s collection</button></Link>
+       <img 
+        className='w-420 darken-image'
+        src='https://cdn.shopify.com/s/files/1/0601/5415/1102/files/49465631_326446067965810_3991664606457984798_n_1_1024x1024_a868d3a0-8fc1-461a-8a17-00bce457b999_480x480.jpg?v=1694676743'
+       />
+      </div>
+      <div className='relative'>
+       <p className='absolute z-10 left-8 top-3 text-xl text-white font-semibold'>Men`s sunglasses</p>
+       <Link to='/men'><button     
+         onClick={scrollToTop} className='absolute bottom-5 left-5 bg-gray-100 z-10 px-10 py-0.5 shadow-lg hover:bg-transparent transition hover:shadow-transparent hover:text-white'>Explore men`s collection</button></Link>
+       <img
+        className='w-420 ml-5 darken-image'
+        src='https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/ce26033a-d01f-479f-b2d8-14f0d2bb3918/flyfree-sunglasses-P5S37p.png'
+         />
       </div>
      </section>
     </div>

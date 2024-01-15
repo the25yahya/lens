@@ -70,9 +70,13 @@ export const ContextProvider = ({children}) => {
       subtotal:0,
     }
     const [state, dispatch] = useReducer(cartReducer,cartInitialState)
+    const [productDisplay, setProductDisplay] = useState(false);
+    const [productDisplayMen, setProductDisplayMen] = useState(false);
+    const [productDisplayWomen, setProductDisplayWomen] = useState(false);
+    const [displayedProduct, setDisplayedProduct] = useState(null);
     return(
         <StateContext.Provider
-        value={{loading,setLoading,toggleMenu,isMenuOpen,CloseMenu,glasses,setGlasses,hero,setHero,changeHero0,changeHero1,changeHero2,changeHero3,dot,setDot,menGlasses,womenGlasses,cartReducer,state,dispatch}}
+        value={{loading,setLoading,toggleMenu,isMenuOpen,CloseMenu,glasses,setGlasses,hero,setHero,changeHero0,changeHero1,changeHero2,changeHero3,dot,setDot,menGlasses,womenGlasses,cartReducer,state,dispatch,productDisplay,setProductDisplay,productDisplayMen,productDisplayWomen,setProductDisplayMen,setProductDisplayWomen,displayedProduct,setDisplayedProduct}}
         >
          {children}
         </StateContext.Provider>

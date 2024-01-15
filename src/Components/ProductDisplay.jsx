@@ -13,7 +13,7 @@ const ProductDisplay = (props) => {
     dispatch({ type : 'ADD_TO_CART', payload:props})
     scrollToTop();
   };
-    const [quantity, setQuantity] = useState(1);
+    const [quantity, setQuantity,productDisplay,setProductDisplay,displayedProduct] = useState(1);
   // Function to handle increasing the quantity
   const increaseQuantity = () => {
     setQuantity(quantity + 1);

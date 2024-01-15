@@ -31,6 +31,9 @@ nav{
   border-radius: 50%;
   animation: pulse 1s infinite;
 }
+.darken-image {
+  filter: brightness(70%);
+}
 
 .title {
     /* Your other styles here */
