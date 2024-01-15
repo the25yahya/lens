@@ -10,7 +10,8 @@
         "img5":"https://us.otiseyewear.com/cdn/shop/products/JT_OTIS_OMAR_04_1800x1800.jpg?v=1659971442",
         "img6":"https://us.otiseyewear.com/cdn/shop/products/dsc2609_1800x1800.jpg?v=1659971442",
         "colors":"1 vailable color",
-        "tag":"New Arrival"
+        "tag":"New Arrival",
+        "type":"oval"
     },
     {
         "name":"DIVIDE X - Eco Aurora",
@@ -23,7 +24,8 @@
         "img5":"https://au.otiseyewear.com/cdn/shop/files/DIVIDEXPI2_1800x1800.png?v=1689644846",
         "img6":"https://au.otiseyewear.com/cdn/shop/files/DIVIDEXPI3_1800x1800.png?v=1689644846",
         "colors":"1 vailable color",
-        "tag":"New Arrival"
+        "tag":"New Arrival",
+        "type":"geometric"
     },
     {
         "name":"DIVIDE X - Outerknown",
@@ -36,7 +38,8 @@
         "img5":"https://au.otiseyewear.com/cdn/shop/files/190-2305P-OK_D_1800x1800.jpg?v=1693813370",
         "img6":"https://au.otiseyewear.com/cdn/shop/files/190-2305P-OK_F_1800x1800.jpg?v=1693813369",
         "colors":"1 vailable color",
-        "tag":"New Arrival"
+        "tag":"New Arrival",
+        "type":"geometric"
     },
     {
         "name":"UNTITLED - Eco Crystal",
@@ -49,6 +52,7 @@
         "img5":"https://au.otiseyewear.com/cdn/shop/files/195-2303-K_F_e3795731-5bd1-4bbc-9efe-a6289176bde6_1800x1800.jpg?v=1701220541",
         "img6":"https://au.otiseyewear.com/cdn/shop/files/195-2303-K_G_8f383483-6f98-4251-b827-bab4444b5503_1800x1800.jpg?v=1701220541",
         "colors":"1 vailable color",
-        "tag":"New Arrival"
+        "tag":"New Arrival",
+        "type":"rectangle"
     }
 ]
