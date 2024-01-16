@@ -36,7 +36,7 @@ const CartItems = () => {
             </div>
             <div className='flex items-center w-380 justify-between my-1'>
                <h3 className='font-bold'>Total</h3>
-               <p className='font-bold'>$329.95</p>
+               <p className='font-bold'>${state.subtotal + 50}</p>
             </div>
         </div>
     </div>

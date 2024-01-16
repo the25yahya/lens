@@ -4,9 +4,9 @@ import couple from '../Assets/couple.png'
 import { useStateContext } from '../Contexts/ContextProvider'
 
 const Hero = (props) => {
-    const {hero,setHero,changeHero0,changeHero1,changeHero2,changeHero3,dot,setDot} = useStateContext();
+    const {changeHero0,changeHero1,changeHero2,changeHero3,dot} = useStateContext();
   return (
-    <section className='flex items-center justify-between border-b border-gray-200'>
+    <section className='flex items-center justify-center border-b border-gray-200 w-full'>
     <div className='flex flex-col items-center pl-12 ml-12 mt-10 relative w-1/2'>
         <div className='absolute flex rotate-90 -left-8 top-60'>
         <div onClick={changeHero0} className={`cursor-pointer font-bold text-5xl ${dot === 0 ? 'text-black' : 'text-gray-400'} ml-1`}>.</div>
